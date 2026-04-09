@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lauren Bronson &#8212; Strategic Marketing &amp; Partnerships</title>
+<title>Lauren Bronson — Strategic Marketing & Partnerships</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -48,11 +48,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,31,60,.97
 .subdiv{margin:48px 0 32px;display:flex;align-items:center;gap:16px}
 .subdiv-label{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
 .subdiv-line{flex:1;height:1px;background:rgba(255,255,255,.12)}
-.subdiv-dark .subdiv-line{background:rgba(255,255,255,.12)}
-.subdiv-light .subdiv-line{background:var(--grl)}
-.subdiv-light .subdiv-label{color:var(--nm)}
-
-/* PORTFOLIO GRID */
 .pg{display:grid;grid-template-columns:repeat(2,1fr);gap:2px}
 .pi{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);transition:background .3s;position:relative;display:flex;flex-direction:column}
 .pi::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s;z-index:2}
@@ -76,8 +71,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,31,60,.97
 .ml{font-size:11px;color:rgba(255,255,255,.4);margin-top:2px;letter-spacing:.04em}
 .il{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(200,169,90,.3);padding-bottom:2px;transition:all .2s}
 .il:hover{border-color:var(--gold);gap:12px}
-
-/* STRATEGY CARDS */
 .sg{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
 .sc{background:var(--w);border:1px solid var(--grl);padding:36px;transition:all .3s;position:relative;overflow:hidden}
 .sc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .3s}
@@ -92,36 +85,25 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,31,60,.97
 .cde{font-size:13px;line-height:1.75;color:var(--gray);font-weight:300;margin-bottom:18px}
 .cl{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--grl);border-left:none;border-right:none;border-top:none;padding-bottom:2px;transition:all .2s;cursor:pointer;background:none}
 .cl:hover{color:var(--gold);border-color:var(--gold);gap:12px}.cls{display:flex;flex-direction:column;gap:10px}
-
-/* EARNED MEDIA GRID */
-.mg{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+/* TEEN VOGUE GRID */
+.tv-hd{margin:40px 0 16px;display:flex;align-items:center;gap:16px}
+.tv-hd-label{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+.tv-hd-line{flex:1;height:1px;background:rgba(255,255,255,.12)}
+.tv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
 .mi{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);transition:background .3s;text-decoration:none;display:block}
-.mi:hover{background:rgba(255,255,255,.09)}.mi.ms2{grid-column:span 2}
+.mi:hover{background:rgba(255,255,255,.09)}
 .mt{width:100%;aspect-ratio:16/9;overflow:hidden;position:relative;background:#0a1628}
-.mt.mw{aspect-ratio:21/9}
 .mt img{width:100%;height:100%;object-fit:cover;display:block;opacity:.8;transition:opacity .3s}
 .mi:hover .mt img{opacity:1}
 .mpl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
 .mpb{width:40px;height:40px;background:rgba(200,169,90,.85);border-radius:50%;display:flex;align-items:center;justify-content:center}
 .mpb svg{width:14px;height:14px;fill:var(--navy);margin-left:2px}
 .mb{padding:20px 24px}
-.mo{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
-.mti{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--w);line-height:1.3;margin-bottom:6px}
+.mo{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.mti{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--w);line-height:1.3;margin-bottom:4px}
 .mty{font-size:12px;color:rgba(255,255,255,.4)}
 .mar{font-size:16px;color:rgba(255,255,255,.2);margin-top:10px;display:block;transition:color .3s}
 .mi:hover .mar{color:var(--gold)}
-
-/* COMPACT AWARENESS ROW */
-.compact-row{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:2px}
-.ci{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);transition:background .3s;text-decoration:none;display:flex;align-items:center;gap:20px;padding:20px 24px}
-.ci:hover{background:rgba(255,255,255,.09)}
-.ci-thumb{width:96px;height:54px;flex-shrink:0;overflow:hidden;position:relative;background:#0a1628}
-.ci-thumb img{width:100%;height:100%;object-fit:cover;display:block;opacity:.8}
-.ci-body .mo{margin-bottom:4px}
-.ci-body .mti{font-size:14px;margin-bottom:0}
-.ci-arrow{font-size:14px;color:rgba(255,255,255,.2);margin-left:auto;flex-shrink:0;transition:color .3s}
-.ci:hover .ci-arrow{color:var(--gold)}
-
 .con{background:var(--navy);padding:100px 80px;text-align:center}
 .coni{max-width:600px;margin:0 auto}
 .con h2{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,56px);font-weight:900;color:var(--w);line-height:1.1;margin-bottom:24px}
@@ -137,6 +119,30 @@ footer p{font-size:12px;color:rgba(255,255,255,.3)}
 .lbi{width:100%;max-width:1000px;height:85vh;position:relative;display:flex;flex-direction:column}
 .lbx{position:absolute;top:-44px;right:0;color:rgba(255,255,255,.7);font-size:28px;cursor:pointer;background:none;border:none;padding:4px 8px;transition:color .2s}
 .lbx:hover{color:var(--gold)}.lbi iframe{width:100%;flex:1;border:none;background:#fff}
+
+/* CHAPTER BREAK */
+.chapter-break{margin:56px 0 40px;text-align:center;}
+.chapter-break-inner{display:flex;align-items:center;gap:20px;margin-bottom:12px;}
+.chapter-break-line{flex:1;height:1px;background:rgba(255,255,255,.15);}
+.chapter-break-label{font-size:11px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);white-space:nowrap;}
+.chapter-break-sub{font-size:13px;color:rgba(255,255,255,.4);font-weight:300;font-style:italic;}
+
+/* HORIZONTAL STRIP CARDS */
+.hs-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;}
+.hs{display:flex;gap:0;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);text-decoration:none;transition:background .3s;position:relative;}
+.hs::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s;z-index:2;}
+.hs:hover::before{transform:scaleX(1)}.hs:hover{background:rgba(255,255,255,.07);}
+.hs-thumb{width:160px;flex-shrink:0;position:relative;overflow:hidden;background:#0a1628;}
+.hs-thumb img{width:100%;height:100%;object-fit:cover;display:block;opacity:.8;transition:opacity .3s;}
+.hs:hover .hs-thumb img{opacity:1;}
+.hs-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;}
+.hs-play svg{width:28px;height:28px;fill:rgba(200,169,90,.8);}
+.hs-body{padding:24px 28px;display:flex;flex-direction:column;justify-content:center;gap:6px;}
+.hs-tag{font-size:10px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);}
+.hs-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--w);line-height:1.3;}
+.hs-desc{font-size:13px;line-height:1.65;color:rgba(255,255,255,.5);font-weight:300;}
+.hs-link{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-top:4px;}
+
 @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 @keyframes scrollPulse{0%,100%{opacity:.3}50%{opacity:.8}}
 .fi{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}.fi.on{opacity:1;transform:translateY(0)}
@@ -147,9 +153,7 @@ nav{padding:0 24px}.nls{display:none}
 .sec{padding:80px 24px}.pg{grid-template-columns:1fr}
 .pi.s2{grid-column:span 1}.pi.s2 .inn{grid-template-columns:1fr}
 .s2 .it{min-height:0;height:auto;aspect-ratio:16/9}
-.sg{grid-template-columns:1fr}.mg{grid-template-columns:1fr}
-.compact-row{grid-template-columns:1fr}
-.mi.ms2{grid-column:span 1}.mt.mw{aspect-ratio:16/9}
+.sg{grid-template-columns:1fr}.tv-grid{grid-template-columns:1fr}.hs-grid{grid-template-columns:1fr}.hs-thumb{width:120px;}
 .asts{grid-template-columns:repeat(3,1fr);gap:16px}
 .con{padding:80px 24px}
 footer{padding:24px;flex-direction:column;gap:12px;text-align:center}}
@@ -216,10 +220,8 @@ footer{padding:24px;flex-direction:column;gap:12px;text-align:center}}
       <p class="ss">Studio integrations, talent campaigns, and activations &#8212; each designed to serve the mission, the partner, and the audience simultaneously. Partners fund talent, crew, travel, and content production in exchange for military installation access and authentic storytelling.</p>
     </div>
 
-    <!-- STUDIO TOURS -->
-    <div class="subdiv subdiv-dark fi"><div class="subdiv-label">In-Person Studio Tours</div><div class="subdiv-line"></div></div>
+    <div class="subdiv fi"><div class="subdiv-label">In-Person Studio Tours</div><div class="subdiv-line"></div></div>
     <div class="pg">
-
       <div class="pi s2 fi">
         <div class="inn">
           <a href="https://www.youtube.com/watch?v=ymzLYEFU6wo" target="_blank" class="it">
@@ -230,12 +232,12 @@ footer{padding:24px;flex-direction:column;gap:12px;text-align:center}}
             <div class="itg">MGM Studios &#8212; Tour Sizzle</div>
             <h3 class="iti">Channing Tatum &#8212; DOG</h3>
             <div class="isu">The campaign that established the model</div>
-            <p class="ide">The first fully partner-funded USO tour: MGM covered talent, crew, travel, and content production in exchange for military installation access and authentic storytelling. Two in-person stops, a virtual engagement reaching troops overseas, studio-distributed content generating 392,000+ YouTube views, and a talent-signed donor email series raising $56,659 &#8212; each element serving a different audience goal.</p>
+            <p class="ide">The first fully partner-funded USO tour: MGM covered talent, crew, travel, and content production in exchange for military installation access and authentic storytelling. Two in-person stops, a virtual engagement reaching troops overseas, studio-distributed content generating 392,000+ YouTube views, and a talent-signed donor email series &#8212; each element serving a different audience goal.</p>
             <div class="ims">
               <div><div class="mn">392K+</div><div class="ml">YouTube views</div></div>
               <div><div class="mn">$56,659</div><div class="ml">Donor revenue</div></div>
             </div>
-            <a href="https://www.youtube.com/watch?v=ymzLYEFU6wo" target="_blank" class="il">Watch the Tour Sizzle &#8594;</a>
+            <a href="https://www.youtube.com/watch?v=ymzLYEFU6wo" target="_blank" class="il">WATCH THE VIDEO &#8594;</a>
           </div>
         </div>
       </div>
@@ -249,18 +251,18 @@ footer{padding:24px;flex-direction:column;gap:12px;text-align:center}}
           <div class="itg">Prime Video &#8212; Tour Sizzle</div>
           <h3 class="iti">John Krasinski &#8212; JACK RYAN</h3>
           <div class="isu">10.8M combined follower reach at near-zero cost</div>
-          <p class="ide">When Krasinski shows up for the USO, his audience doesn&#8217;t just see the USO &#8212; they see someone they trust choosing the USO. Co-branded across talent (4.8M followers) and Prime Video (6M followers) Instagram channels during peak holiday season. An awareness and affinity play designed to compound over time.</p>
+          <p class="ide">When Krasinski shows up for the USO, his audience doesn&#8217;t just see the USO &#8212; they see someone they trust choosing the USO. Co-branded across talent (4.8M followers) and Prime Video (6M followers) Instagram channels during peak holiday season.</p>
           <div class="ims">
             <div><div class="mn">10.8M</div><div class="ml">Combined reach</div></div>
             <div><div class="mn">118K+</div><div class="ml">Instagram likes</div></div>
           </div>
-          <a href="https://www.instagram.com/p/CmZ1yNiJ9mg/" target="_blank" class="il">View on Instagram &#8594;</a>
+          <a href="https://www.instagram.com/p/CmZ1yNiJ9mg/" target="_blank" class="il">VIEW ON INSTAGRAM &#8594;</a>
         </div>
       </div>
 
       <div class="pi fi">
         <a href="https://youtu.be/onSvz8VpzrY" target="_blank" class="it">
-          <img src="jake.png" alt="Jake Gyllenhaal / The Covenant">
+          <img src="jake.jpeg" alt="Jake Gyllenhaal / The Covenant">
           <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
         </a>
         <div class="ib">
@@ -271,13 +273,13 @@ footer{padding:24px;flex-direction:column;gap:12px;text-align:center}}
           <div class="ims">
             <div><div class="mn">$53,271</div><div class="ml">Donor revenue (email + SMS)</div></div>
           </div>
-          <a href="https://youtu.be/onSvz8VpzrY" target="_blank" class="il">Watch the Sizzle &#8594;</a>
+          <a href="https://youtu.be/onSvz8VpzrY" target="_blank" class="il">WATCH THE VIDEO &#8594;</a>
         </div>
       </div>
 
       <div class="pi fi">
         <a href="https://www.youtube.com/shorts/JsVDMG4hESo" target="_blank" class="it">
-          <img src="Bikeriders.png" alt="The Bikeriders USO Tour">
+          <img src="https://img.youtube.com/vi/JsVDMG4hESo/maxresdefault.jpg" alt="The Bikeriders USO Tour">
           <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
         </a>
         <div class="ib">
@@ -285,7 +287,7 @@ footer{padding:24px;flex-direction:column;gap:12px;text-align:center}}
           <h3 class="iti">Austin Butler, Jodie Comer &amp; Norman Reedus &#8212; THE BIKERIDERS</h3>
           <div class="isu">A-list ensemble, fully partner-funded</div>
           <p class="ide">Three major talent names, one in-person installation tour, entirely funded by Focus Features. Authentic military community storytelling that delivers for every party at the table.</p>
-          <a href="https://www.youtube.com/shorts/JsVDMG4hESo" target="_blank" class="il">Watch the Sizzle &#8594;</a>
+          <a href="https://www.youtube.com/shorts/JsVDMG4hESo" target="_blank" class="il">WATCH THE VIDEO &#8594;</a>
         </div>
       </div>
 
@@ -296,56 +298,58 @@ footer{padding:24px;flex-direction:column;gap:12px;text-align:center}}
         </a>
         <div class="ib">
           <div class="itg">Prime Video &#8212; Tour Sizzle</div>
-          <h3 class="iti">Taylor Kitsch &#8212; DARK WOLF</h3>
+          <h3 class="iti">Taylor Kitsch &#8212; THE TERMINAL LIST: DARK WOLF</h3>
           <div class="isu">Third Prime Video integration &#8212; the partnership compounds</div>
-          <p class="ide">Prime Video&#8217;s continued investment across multiple titles reflects the sustained value the model delivers. DARK WOLF marks their third integration, each one building on the trust and relationship established before it.</p>
-          <a href="https://www.instagram.com/p/DOL0C-GEdWt/" target="_blank" class="il">View on Instagram &#8594;</a>
-        </div>
-      </div>
-
-      <div class="pi ghost"></div>
-    </div>
-
-    <!-- VIRTUAL -->
-    <div class="subdiv subdiv-dark fi"><div class="subdiv-label">Virtual Engagement</div><div class="subdiv-line"></div></div>
-    <div class="pg" style="margin-bottom:2px;">
-      <div class="pi fi">
-        <a href="https://youtu.be/hzhORnOuujM" target="_blank" class="it">
-          <img src="snoop.png" alt="Snoop Dogg USO Virtual Tour">
-          <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        </a>
-        <div class="ib">
-          <div class="itg">USO Virtual Tour &#8212; Clip</div>
-          <h3 class="iti">Snoop Dogg &#8212; USO Virtual Tour</h3>
-          <div class="isu">One of the highest-impact virtual events in USO history</div>
-          <p class="ide">Brought Snoop Dogg directly to troops overseas through the USO&#8217;s virtual programming. This clip captures him speaking about staying connected to home while deployed. Ranked among the most impactful virtual engagements the organization has ever produced.</p>
-          <a href="https://youtu.be/hzhORnOuujM" target="_blank" class="il">Watch the Clip &#8594;</a>
+          <p class="ide">Prime Video&#8217;s continued investment across multiple titles reflects the sustained value the model delivers. THE TERMINAL LIST: DARK WOLF marks their third integration, each one building on the trust and relationship established before it.</p>
+          <a href="https://www.instagram.com/p/DOL0C-GEdWt/" target="_blank" class="il">VIEW ON INSTAGRAM &#8594;</a>
         </div>
       </div>
       <div class="pi ghost"></div>
     </div>
 
-    <!-- AWARENESS CAMPAIGN -->
-    <div class="subdiv subdiv-dark fi"><div class="subdiv-label">Awareness Campaign</div><div class="subdiv-line"></div></div>
-    <div class="pg">
-      <div class="pi fi">
-        <a href="https://www.instagram.com/p/DGluuxPPHWT/?hl=en" target="_blank" class="it">
-          <img src="dave.png" alt="Dave Portnoy / USO Canine Volunteer of the Year">
-          <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        </a>
-        <div class="ib">
-          <div class="itg">Canine Volunteer of the Year &#8212; Instagram</div>
-          <h3 class="iti">Dave Portnoy &amp; Miss Peaches &#8212; USO Canine Volunteer of the Year</h3>
-          <div class="isu">Unexpected talent alignment driving authentic reach</div>
-          <p class="ide">Leveraged Dave Portnoy&#8217;s reach to amplify the USO&#8217;s Canine Volunteer of the Year public vote campaign &#8212; encouraging audiences to recognize and vote for their favorite military service dog. Identifying unexpected cultural alignments that drive authentic engagement and reach audiences no traditional placement would reach.</p>
-          <a href="https://www.instagram.com/p/DGluuxPPHWT/?hl=en" target="_blank" class="il">View on Instagram &#8594;</a>
+    </div><!-- close .si -->
+  </section><!-- close campaigns section -->
+
+  <!-- VIRTUAL & SOCIAL — darker bg shift -->
+  <section class="sec" style="background:#07111f;padding-top:60px;padding-bottom:80px;">
+    <div class="si">
+      <div class="subdiv fi"><div class="subdiv-label">Virtual &amp; Social</div><div class="subdiv-line"></div></div>
+      <!-- SNOOP: text left, image right -->
+      <div class="pi s2 fi" style="margin-bottom:2px;">
+        <div class="inn" style="grid-template-columns:1fr 1fr;">
+          <div class="ib">
+            <div class="itg">USO Virtual Tour &#8212; Clip</div>
+            <h3 class="iti">Snoop Dogg &#8212; USO Virtual Tour</h3>
+            <div class="isu">One of the highest-impact virtual events in USO history</div>
+            <p class="ide">Brought Snoop Dogg directly to troops overseas through the USO&#8217;s virtual programming. This clip captures him speaking about staying connected to home while deployed. Ranked among the most impactful virtual engagements the organization has ever produced.</p>
+            <a href="https://youtu.be/hzhORnOuujM" target="_blank" class="il">WATCH THE VIDEO &#8594;</a>
+          </div>
+          <a href="https://youtu.be/hzhORnOuujM" target="_blank" class="it" style="min-height:280px;height:100%;">
+            <img src="snoop.png" alt="Snoop Dogg USO Virtual Tour">
+            <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          </a>
         </div>
       </div>
-      <div class="pi ghost"></div>
-    </div>
 
-  </div>
-</section>
+      <!-- DAVE: image left, text right -->
+      <div class="pi s2 fi" style="margin-top:24px;">
+        <div class="inn" style="grid-template-columns:1fr 1fr;">
+          <a href="https://www.instagram.com/p/DGluuxPPHWT/?hl=en" target="_blank" class="it" style="min-height:280px;height:100%;">
+            <img src="dave.png" alt="Dave Portnoy / USO Canine Volunteer of the Year">
+            <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          </a>
+          <div class="ib">
+            <div class="itg">Awareness Campaign &#8212; Instagram</div>
+            <h3 class="iti">Dave Portnoy &amp; Miss Peaches &#8212; USO Canine Volunteer of the Year</h3>
+            <div class="isu">Unexpected talent alignment driving authentic reach</div>
+            <p class="ide">Leveraged Dave Portnoy&#8217;s reach to amplify the USO&#8217;s Canine Volunteer of the Year public vote campaign &#8212; encouraging audiences to recognize and vote for their favorite military service dog. Proof that the most effective partnerships are sometimes the ones nobody saw coming.</p>
+            <a href="https://www.instagram.com/p/DGluuxPPHWT/?hl=en" target="_blank" class="il">VIEW ON INSTAGRAM &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 <!-- STRATEGIC WORK -->
 <section class="sec scr" id="strategy">
@@ -376,7 +380,7 @@ footer{padding:24px;flex-direction:column;gap:12px;text-align:center}}
         </div>
         <div class="ctg">Multi-Partner Brand Integration Pitch</div>
         <h3 class="cti">PRESSURE &#215; Dunkin&#8217; &#215; USO &#8212; Strategic Partnership Concept</h3>
-        <p class="cde">A three-way brand integration anchored to Memorial Day and the film&#8217;s D-Day narrative. The 72&#162; donation mechanic mirrors the film&#8217;s 72-hour theme. Spans a limited-edition Dunkin&#8217; cup, trigger donation moments, talent appearances, service-member screenings, and a digital WWII letters archive &#8212; multi-stakeholder campaign architecture at its most layered.</p>
+        <p class="cde">A three-way brand integration anchored to Memorial Day and the film&#8217;s D-Day narrative. The 72&#162; donation mechanic mirrors the film&#8217;s 72-hour theme. Spans a limited-edition Dunkin&#8217; cup, trigger donation moments, talent appearances, service-member screenings, and a digital WWII letters archive.</p>
         <div class="cls">
           <button class="cl" onclick="openLB('dunkin.pdf')">View the Dunkin&#8217; Pitch &#8594;</button>
           <button class="cl" onclick="openLB('letters.pdf')">View the Letters Home Proposal &#8594;</button>
@@ -392,11 +396,11 @@ footer{padding:24px;flex-direction:column;gap:12px;text-align:center}}
     <div class="shd fi">
       <div class="slb">Earned Media</div>
       <h2 class="st">Placed. Published. Broadcast.</h2>
-      <p class="ss">Securing national media placements across two organizations &#8212; through a combination of pitching, relationship-building, and designing experiences compelling enough that outlets wanted to cover them.</p>
+      <p class="ss">Securing national media placements across two organizations &#8212; through pitching, cross-departmental collaboration, relationship-building, and designing experiences compelling enough that outlets wanted to cover them.</p>
     </div>
 
-    <!-- USO EARNED MEDIA -->
-    <div class="subdiv subdiv-dark fi"><div class="subdiv-label">USO</div><div class="subdiv-line"></div></div>
+    <!-- USO -->
+    <div class="subdiv fi"><div class="subdiv-label">USO</div><div class="subdiv-line"></div></div>
     <div class="pg" style="margin-bottom:2px;">
       <div class="pi s2 fi">
         <div class="inn">
@@ -408,50 +412,86 @@ footer{padding:24px;flex-direction:column;gap:12px;text-align:center}}
             <div class="itg">Food Network &#8212; Series Finale</div>
             <h3 class="iti">The Great Food Truck Race &#8212; Series Finale Feature</h3>
             <div class="isu">A television placement built entirely on initiative</div>
-            <p class="ide">Identified an undervalued talent relationship no one else was pursuing. Got in front of Chef Tyler Florence at San Francisco Fleet Week, let him serve the mission, and in the process planted the seed for a TV collaboration. Followed up, secured the producer introduction, developed the creative pitch, and delivered USO&#8217;s feature in the series finale of THE GREAT FOOD TRUCK RACE &#8212; reaching a mainstream linear television audience at no cost. Tyler Florence has since joined the organization as a global ambassador.</p>
+            <p class="ide">Recognized Chef Tyler Florence&#8217;s genuine passion for the military mission and made it a priority to re-engage him in person &#8212; creating the space for a candid conversation about where his platforms and the USO&#8217;s mission could intersect. When he expressed interest in exploring a collaboration with THE GREAT FOOD TRUCK RACE, I took it from there: secured the producer introduction, developed and pitched the creative concept, and locked USO&#8217;s feature in the series finale. A mainstream linear television audience &#8212; exactly where our donors already are. Tyler Florence has since joined the organization as a USO Global Ambassador.</p>
             <div class="ims">
-              <div><div class="mn">$0</div><div class="ml">Cost to USO</div></div>
               <div><div class="mn">Series Finale</div><div class="ml">Food Network placement</div></div>
-              <div><div class="mn">Global</div><div class="ml">Ambassador conversion</div></div>
+              <div><div class="mn">USO Global</div><div class="ml">Ambassador &#8212; Tyler Florence</div></div>
             </div>
-            <a href="https://www.facebook.com/theUSO/posts/sailors-at-naval-station-norfolk-got-a-visit-from-the-great-food-truck-race-fina/1252801533551913/" target="_blank" class="il">Watch the Clip &#8594;</a>
+            <a href="https://www.facebook.com/theUSO/posts/sailors-at-naval-station-norfolk-got-a-visit-from-the-great-food-truck-race-fina/1252801533551913/" target="_blank" class="il">WATCH THE VIDEO &#8594;</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- MAKE-A-WISH EARNED MEDIA -->
-    <div class="subdiv subdiv-dark fi"><div class="subdiv-label">Make-A-Wish America</div><div class="subdiv-line"></div></div>
-    <p class="ss fi" style="margin-bottom:32px;">Collaborated with the Make-A-Wish communications team to identify wishes with national media potential and shape each experience so the story was worth telling &#8212; ensuring the talent looked great, the child was at the center, and the moment was built for coverage.</p>
+    <!-- MAKE-A-WISH -->
+    <div class="subdiv fi"><div class="subdiv-label">Make-A-Wish America</div><div class="subdiv-line"></div></div>
+    <p class="ss fi" style="margin-bottom:40px;max-width:100%;">Collaborated with the Make-A-Wish communications team to identify wishes with national media potential &#8212; shaping each experience so the story was worth telling and the moment was built for coverage.</p>
 
-    <div class="mg">
-      <a href="https://www.today.com/video/make-a-wish-foundation-makes-7-kids-dreams-come-true-at-grammys-1148418627524" target="_blank" class="mi fi">
-        <div class="mt"><img src="grammys.jpg" alt="Make-A-Wish Kids at the Grammys"><div class="mpl"><div class="mpb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div></div>
-        <div class="mb"><div class="mo">Today Show &#8212; NBC</div><div class="mti">Make-A-Wish Kids at the Grammys</div><div class="mty">National Television</div><span class="mar">&#8594;</span></div>
-      </a>
+    <!-- GRAMMYS: info LEFT, image RIGHT -->
+    <div class="pg" style="margin-bottom:2px;">
+      <div class="pi s2 fi">
+        <div class="inn" style="grid-template-columns:1fr 1fr;">
+          <div class="ib" style="justify-content:center;">
+            <div class="itg">Today Show &#8212; NBC National Television</div>
+            <h3 class="iti">Make-A-Wish Kids at the GRAMMY Awards</h3>
+            <div class="isu">Seven wish kids. One night at music&#8217;s biggest stage.</div>
+            <p class="ide">Seven Make-A-Wish kids experienced the GRAMMY Awards &#8212; and the Today Show was there to capture every moment. A national television placement that put the Make-A-Wish mission in front of millions at the exact moment of maximum emotional impact.</p>
+            <div class="ims">
+              <div><div class="mn">NBC</div><div class="ml">National broadcast</div></div>
+              <div><div class="mn">7</div><div class="ml">Wish kids featured</div></div>
+            </div>
+            <a href="https://www.today.com/video/make-a-wish-foundation-makes-7-kids-dreams-come-true-at-grammys-1148418627524" target="_blank" class="il">WATCH THE VIDEO &#8594;</a>
+          </div>
+          <a href="https://www.today.com/video/make-a-wish-foundation-makes-7-kids-dreams-come-true-at-grammys-1148418627524" target="_blank" class="it">
+            <img src="grammys.png" alt="Make-A-Wish Kids at the GRAMMYs">
+            <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          </a>
+        </div>
+      </div>
+    </div>
 
-      <a href="https://www.youtube.com/watch?v=5jT8Qef5Hf8" target="_blank" class="mi fi">
-        <div class="mt"><img src="https://img.youtube.com/vi/5jT8Qef5Hf8/maxresdefault.jpg" alt="Katy Perry"><div class="mpl"><div class="mpb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div></div>
-        <div class="mb"><div class="mo">Teen Vogue &#215; YouTube</div><div class="mti">Katy Perry Grants a Make-A-Wish</div><div class="mty">Social &amp; Digital Video</div><span class="mar">&#8594;</span></div>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=QS4TyYWfui8" target="_blank" class="mi fi">
-        <div class="mt"><img src="https://img.youtube.com/vi/QS4TyYWfui8/maxresdefault.jpg" alt="Justin Bieber"><div class="mpl"><div class="mpb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div></div>
-        <div class="mb"><div class="mo">Teen Vogue &#215; YouTube</div><div class="mti">Justin Bieber Grants a Make-A-Wish</div><div class="mty">Social &amp; Digital Video</div><span class="mar">&#8594;</span></div>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=1-g-hunkA3E" target="_blank" class="mi fi">
-        <div class="mt"><img src="https://img.youtube.com/vi/1-g-hunkA3E/maxresdefault.jpg" alt="Meghan Trainor"><div class="mpl"><div class="mpb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div></div>
-        <div class="mb"><div class="mo">Teen Vogue &#215; YouTube</div><div class="mti">Meghan Trainor Grants a Make-A-Wish</div><div class="mty">Social &amp; Digital Video</div><span class="mar">&#8594;</span></div>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=Oq2_h6KU4aw" target="_blank" class="mi ms2 fi">
-        <div class="mt mw"><img src="https://img.youtube.com/vi/Oq2_h6KU4aw/maxresdefault.jpg" alt="Cayden's Wish"><div class="mpl"><div class="mpb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div></div>
-        <div class="mb"><div class="mo">Extra &#8212; Mario Lopez</div><div class="mti">Cayden&#8217;s Wish: Becoming a Pop Star</div><div class="mty">National Entertainment News &#8212; Red Bull Studio, Macy&#8217;s, Extra at The Grove</div><span class="mar">&#8594;</span></div>
-      </a>
+    <!-- CAYDEN: image LEFT, info RIGHT -->
+    <div class="pg" style="margin-top:32px;">
+      <div class="pi s2 fi">
+        <div class="inn">
+          <a href="https://www.youtube.com/watch?v=Oq2_h6KU4aw" target="_blank" class="it" style="min-height:280px;height:100%;">
+            <img src="cayden.png" alt="Cayden's Wish">
+            <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          </a>
+          <div class="ib">
+            <div class="itg">Extra &#8212; Mario Lopez at The Grove</div>
+            <h3 class="iti">Cayden&#8217;s Wish: Becoming a Pop Star</h3>
+            <div class="isu">Experience design that made a wish kid feel like a star</div>
+            <p class="ide">Cayden wanted to be a pop star &#8212; so we built it. Recording session at Red Bull&#8217;s studio (staff lined up outside with signs cheering him on), Macy&#8217;s wardrobe, Maroon 5 meet-and-greet, and a live interview with Mario Lopez on the set of Extra at The Grove. Cayden was the star the entire time.</p>
+            <div class="ims">
+              <div><div class="mn">Extra</div><div class="ml">National entertainment news</div></div>
+              <div><div class="mn">Maroon 5</div><div class="ml">+ Red Bull + Macy&#8217;s</div></div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=Oq2_h6KU4aw" target="_blank" class="il">WATCH THE VIDEO &#8594;</a>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
+    <div style="height:2px;background:rgba(255,255,255,.08);margin:40px 0;"></div>
+    <!-- TEEN VOGUE -->
+    <div class="tv-hd fi"><div class="tv-hd-label">Teen Vogue &#215; Featured Wish Stories</div><div class="tv-hd-line"></div></div>
+    <div class="tv-grid fi">
+      <a href="https://www.youtube.com/watch?v=5jT8Qef5Hf8" target="_blank" class="mi">
+        <div class="mt"><img src="https://img.youtube.com/vi/5jT8Qef5Hf8/maxresdefault.jpg" alt="Katy Perry"><div class="mpl"><div class="mpb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div></div>
+        <div class="mb"><div class="mo">YouTube Feature</div><div class="mti">Katy Perry</div><div class="mty">Teen Vogue &#215; Make-A-Wish</div><span class="mar">&#8594;</span></div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=QS4TyYWfui8" target="_blank" class="mi">
+        <div class="mt"><img src="https://img.youtube.com/vi/QS4TyYWfui8/maxresdefault.jpg" alt="Justin Bieber"><div class="mpl"><div class="mpb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div></div>
+        <div class="mb"><div class="mo">YouTube Feature</div><div class="mti">Justin Bieber</div><div class="mty">Teen Vogue &#215; Make-A-Wish</div><span class="mar">&#8594;</span></div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=1-g-hunkA3E" target="_blank" class="mi">
+        <div class="mt"><img src="https://img.youtube.com/vi/1-g-hunkA3E/maxresdefault.jpg" alt="Meghan Trainor"><div class="mpl"><div class="mpb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div></div>
+        <div class="mb"><div class="mo">YouTube Feature</div><div class="mti">Meghan Trainor</div><div class="mty">Teen Vogue &#215; Make-A-Wish</div><span class="mar">&#8594;</span></div>
+      </a>
+    </div>
+
 </section>
 
 <!-- CONTACT -->
