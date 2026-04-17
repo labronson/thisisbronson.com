@@ -118,7 +118,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3)}
 .lb.on{display:flex}
 .lbi{width:100%;max-width:1000px;height:85vh;position:relative;display:flex;flex-direction:column}
 .lbx{position:absolute;top:-44px;right:0;color:rgba(255,255,255,.7);font-size:28px;cursor:pointer;background:none;border:none;padding:4px 8px;transition:color .2s}
-.lbx:hover{color:var(--gold)}.lbi iframe{width:100%;flex:1;border:none;background:#fff}
+.lbx:hover{color:var(--gold)}.lbi object{width:100%;flex:1;border:none;background:#fff;display:block;}
 
 /* CHAPTER BREAK */
 .chapter-break{margin:56px 0 40px;text-align:center;}
@@ -163,7 +163,7 @@ footer{padding:24px;flex-direction:column;gap:12px;text-align:center}}
 <div class="lb" id="lb">
   <div class="lbi">
     <button class="lbx" onclick="closeLB()">&#x2715;</button>
-    <iframe id="lbf" src=""></iframe>
+    <object id="lbf" data="" type="application/pdf"></object>
   </div>
 </div>
 <nav>
@@ -513,8 +513,8 @@ footer{padding:24px;flex-direction:column;gap:12px;text-align:center}}
 </footer>
 
 <script>
-function openLB(f){document.getElementById('lbf').src=f;document.getElementById('lb').classList.add('on');document.body.style.overflow='hidden'}
-function closeLB(){document.getElementById('lb').classList.remove('on');document.getElementById('lbf').src='';document.body.style.overflow=''}
+function openLB(f){document.getElementById('lbf').data=f;document.getElementById('lb').classList.add('on');document.body.style.overflow='hidden'}
+function closeLB(){document.getElementById('lb').classList.remove('on');document.getElementById('lbf').data='';document.body.style.overflow=''}
 document.getElementById('lb').addEventListener('click',function(e){if(e.target===this)closeLB()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB()});
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')})},{threshold:.08});
