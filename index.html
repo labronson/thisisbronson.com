@@ -517,4 +517,11 @@ function openLB(f){document.getElementById('lbf').src=f;document.getElementById(
 function closeLB(){document.getElementById('lb').classList.remove('on');document.getElementById('lbf').src='';document.body.style.overflow=''}
 document.getElementById('lb').addEventListener('click',function(e){if(e.target===this)closeLB()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB()});
-const obs=new IntersectionObserver(es=>
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')})},{threshold:.08});
+document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
+const secs=document.querySelectorAll('section[id]');
+const nls=document.querySelectorAll('.nls a');
+window.addEventListener('scroll',()=>{let c='';secs.forEach(s=>{if(window.scrollY>=s.offsetTop-100)c=s.getAttribute('id')});nls.forEach(l=>{l.style.color=l.getAttribute('href')==='#'+c?'var(--gold)':'rgba(255,255,255,.7)'})});
+</script>
+</body>
+</html>
