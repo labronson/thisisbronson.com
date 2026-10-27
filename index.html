@@ -7,7 +7,7 @@
 <meta name="description" content="Lauren Bronson finds untapped value, aligns the right people, and builds strategies, partnerships, and stories that drive growth and give everyone a reason to say yes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --red:#E3000B;--yellow:#FFCF00;--blue:#006CB7;
@@ -126,7 +126,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(5,19,30,.97)
 .ctg{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
 .cti{font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:10px;letter-spacing:-.01em}
 .cde{font-size:13px;line-height:1.75;color:var(--gray);font-weight:300;margin-bottom:18px}
-.cl{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red);text-decoration:none;border:none;padding:0;padding-bottom:2px;transition:gap .2s;cursor:pointer;background:none}
+.cl{font-family:'DM Sans',sans-serif;display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red);text-decoration:none;border:none;padding:0;padding-bottom:2px;transition:gap .2s;cursor:pointer;background:none}
 .cl:hover{gap:13px}.cls{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
 
 /* MEDIA GRID (3-up) */
@@ -193,9 +193,9 @@ body.intro-lock{overflow:hidden}
 .intro-thesis{opacity:0;animation:introThesis 1s ease .45s forwards;color:white;font-family:'Poppins',sans-serif;font-size:clamp(25px,3.6vw,48px);font-weight:700;line-height:1.16;letter-spacing:-.035em;max-width:850px;margin:0 auto}
 .intro-thesis em{font-family:Georgia,serif;color:var(--yellow);font-weight:400}
 .logo-stage{position:relative;height:42vh;display:grid;place-items:center}
-.career-logo{position:absolute;max-width:min(520px,68vw);max-height:250px;width:auto;height:auto;opacity:0;filter:drop-shadow(0 20px 35px rgba(0,0,0,.28));animation:logoChapter 3.1s ease both}
-.career-logo.warped{animation-delay:1.6s;max-height:270px}.career-logo.mcr{animation-delay:4.7s;filter:invert(1) drop-shadow(0 20px 35px rgba(0,0,0,.28));max-width:min(620px,75vw)}.career-logo.wish{animation-delay:7.8s;width:min(470px,62vw);max-width:none;max-height:none;margin-top:-28px}.career-logo.uso{animation-delay:10.9s;max-width:min(430px,57vw);max-height:238px}
-.intro-close{position:absolute;left:50%;top:52%;width:96vw;transform:translate(-50%,-50%);opacity:0;animation:closeReveal 1.2s ease 14.1s forwards}.intro-close h2{font-family:'Poppins',sans-serif;color:white;font-size:clamp(14px,3.2vw,50px);font-weight:700;line-height:1.14;letter-spacing:-.04em;white-space:nowrap}.intro-close h2 em{font:inherit;color:inherit}.intro-progress{position:fixed;left:0;bottom:0;height:3px;background:var(--yellow);z-index:2002;animation:progress 17.9s linear forwards;transform-origin:left}
+.career-logo{position:absolute;max-width:min(520px,68vw);max-height:250px;width:auto;height:auto;opacity:0;filter:drop-shadow(0 20px 35px rgba(0,0,0,.28));animation:logoChapter 1.55s ease both}
+.career-logo.warped{animation-delay:1.6s;max-height:270px}.career-logo.mcr{animation-delay:3.15s;filter:invert(1) drop-shadow(0 20px 35px rgba(0,0,0,.28));max-width:min(620px,75vw)}.career-logo.wish{animation-delay:4.7s;width:min(470px,62vw);max-width:none;max-height:none;margin-top:-28px}.career-logo.uso{animation-delay:6.25s;max-width:min(430px,57vw);max-height:238px}
+.intro-close{position:absolute;left:50%;top:52%;width:96vw;transform:translate(-50%,-50%);opacity:0;animation:closeReveal 1.2s ease 7.9s forwards}.intro-close h2{font-family:'Poppins',sans-serif;color:white;font-size:clamp(14px,3.2vw,50px);font-weight:700;line-height:1.14;letter-spacing:-.04em;white-space:nowrap}.intro-close h2 em{font:inherit;color:inherit}.intro-progress{position:fixed;left:0;bottom:0;height:3px;background:var(--yellow);z-index:2002;animation:progress 10.95s linear forwards;transform-origin:left}
 @keyframes introThesis{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 @keyframes logoChapter{0%{opacity:0;transform:translateY(18px) scale(.98)}15%,78%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-14px) scale(1.01)}}
 @keyframes closeReveal{to{opacity:1;transform:translate(-50%,-50%)}}
@@ -603,7 +603,7 @@ footer{padding:24px 22px;flex-direction:column;gap:12px;text-align:center}
     setTimeout(()=>{intro.style.display='none';skipbtn.style.display='none';document.body.classList.remove('intro-lock');},700);
   }
   skipbtn.addEventListener('click',finish);
-  if(reduce){finish();}else{finishTimer=setTimeout(finish,17900);}
+  if(reduce){finish();}else{finishTimer=setTimeout(finish,10950);}
 })();
 
 function openLB(f){document.getElementById('lbf').data=f;document.getElementById('lb').classList.add('on');document.body.style.overflow='hidden'}
