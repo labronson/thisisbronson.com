@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lauren Bronson — for LEGO</title>
+<link rel="canonical" href="https://thisisbronson.com/lego/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#E3000B;--yellow:#FFCF00;--blue:#006CB7;
+  --ink:#05131E;--ink2:#0d2436;--paper:#FDFCF9;--paper2:#f2eee3;
+  --gray:#5a6672;--line:#e2ddd0;--w:#fff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);overflow-x:hidden}
+::selection{background:var(--yellow);color:var(--ink)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(5,19,30,.97);backdrop-filter:blur(10px);padding:0 48px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.nl{font-family:'Poppins',sans-serif;font-weight:800;font-size:19px;color:var(--w);letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.nl .studs{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.nl .studs i{width:6px;height:6px;border-radius:50%;display:block}
+.nl .studs i:nth-child(1){background:var(--red)}.nl .studs i:nth-child(2){background:var(--yellow)}
+.nl .studs i:nth-child(3){background:var(--blue)}.nl .studs i:nth-child(4){background:var(--w)}
+.nls{display:flex;gap:32px;list-style:none}
+.nls a{color:rgba(255,255,255,.72);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;transition:color .2s}
+.nls a:hover{color:var(--yellow)}
+
+/* HERO */
+.hero{min-height:100vh;background:var(--ink);display:flex;align-items:center;position:relative;overflow:hidden;padding:120px 80px 80px}
+.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.05) 2px,transparent 2px);background-size:26px 26px;pointer-events:none}
+.hero::after{content:'';position:absolute;top:-160px;right:-120px;width:520px;height:520px;background:radial-gradient(circle,rgba(0,108,183,.22) 0%,transparent 70%);pointer-events:none}
+.hc{max-width:960px;position:relative;z-index:1;animation:fadeUp 1s ease forwards}
+.hl{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--yellow);margin-bottom:26px;display:flex;align-items:center;gap:12px}
+.hl .brickrow{display:flex;gap:4px}
+.hl .brickrow b{width:14px;height:14px;border-radius:3px;position:relative;display:block}
+.hl .brickrow b::before{content:'';position:absolute;top:-3px;left:50%;transform:translateX(-50%);width:6px;height:6px;border-radius:50%;background:inherit;opacity:.9}
+.hl .brickrow b:nth-child(1){background:var(--red)}.hl .brickrow b:nth-child(2){background:var(--yellow)}.hl .brickrow b:nth-child(3){background:var(--blue)}
+.hero h1{font-family:'Poppins',sans-serif;font-size:clamp(48px,7.5vw,104px);font-weight:800;color:var(--w);line-height:.98;margin-bottom:30px;letter-spacing:-.03em}
+.hero h1 .r{color:var(--red)}.hero h1 .y{color:var(--yellow)}.hero h1 .b{color:var(--blue)}
+.hd{font-size:19px;line-height:1.7;color:rgba(255,255,255,.72);max-width:640px;margin-bottom:44px;font-weight:300}
+.hd strong{color:var(--w);font-weight:600}
+.ha{display:flex;gap:16px;flex-wrap:wrap}
+.bp{background:var(--yellow);color:var(--ink);padding:15px 34px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:all .2s;display:inline-block;border-radius:4px}
+.bp:hover{transform:translateY(-3px);box-shadow:0 8px 0 -2px rgba(255,207,0,.35)}
+.bs{border:2px solid rgba(255,255,255,.28);color:var(--w);padding:13px 32px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:all .2s;display:inline-block;border-radius:4px}
+.bs:hover{border-color:var(--yellow);color:var(--yellow)}
+.hscr{position:absolute;bottom:38px;left:80px;display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.35);font-size:11px;letter-spacing:.14em;text-transform:uppercase;z-index:1}
+.scrl{width:44px;height:2px;background:var(--yellow);animation:scrollPulse 2s ease-in-out infinite;border-radius:2px}
+
+/* SECTION SCAFFOLD */
+.sec{padding:110px 80px}
+.sink{background:var(--ink)}.spaper{background:var(--paper)}.spaper2{background:var(--paper2)}
+.si{max-width:1200px;margin:0 auto}
+.shd{margin-bottom:60px}
+.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.eyebrow .cluster{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.eyebrow .cluster i{width:7px;height:7px;border-radius:50%;display:block}
+.eyebrow .cluster i:nth-child(1){background:var(--red)}.eyebrow .cluster i:nth-child(2){background:var(--yellow)}
+.eyebrow .cluster i:nth-child(3){background:var(--blue)}.eyebrow .cluster i:nth-child(4){background:var(--ink);opacity:.25}
+.sink .eyebrow .cluster i:nth-child(4){background:var(--w);opacity:.3}
+.eyebrow span{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue)}
+.sink .eyebrow span{color:var(--yellow)}
+.st{font-family:'Poppins',sans-serif;font-size:clamp(30px,4.2vw,50px);font-weight:800;line-height:1.08;letter-spacing:-.02em}
+.sink .st{color:var(--w)}.spaper .st,.spaper2 .st{color:var(--ink)}
+.ss{font-size:16px;line-height:1.75;font-weight:300;margin-top:18px;max-width:640px}
+.sink .ss{color:rgba(255,255,255,.62)}.spaper .ss,.spaper2 .ss{color:var(--gray)}
+
+/* ABOUT */
+.ab{display:grid;grid-template-columns:1fr 1.55fr;gap:80px;align-items:start}
+.ab h2{font-family:'Poppins',sans-serif;font-size:clamp(30px,3.6vw,46px);font-weight:800;color:var(--ink);line-height:1.1;letter-spacing:-.02em}
+.ar p{font-size:17px;line-height:1.8;color:#39434d;margin-bottom:20px;font-weight:300}
+.ar p strong{color:var(--ink);font-weight:600}
+.arbar{width:56px;height:6px;border-radius:3px;margin-top:36px;background:linear-gradient(90deg,var(--red) 0 33%,var(--yellow) 33% 66%,var(--blue) 66% 100%)}
+
+/* THESIS STRIP */
+.thesis{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:8px}
+.tcard{background:var(--ink2);border-radius:10px;padding:34px 30px;position:relative;overflow:hidden;transition:transform .25s}
+.tcard:hover{transform:translateY(-4px)}
+.tcard::before{content:'';position:absolute;top:0;left:0;right:0;height:6px}
+.tcard:nth-child(1)::before{background:var(--red)}.tcard:nth-child(2)::before{background:var(--yellow)}.tcard:nth-child(3)::before{background:var(--blue)}
+.tcard .studcap{display:flex;gap:5px;margin-bottom:20px}
+.tcard .studcap i{width:12px;height:12px;border-radius:50%;display:block;opacity:.9}
+.tcard:nth-child(1) .studcap i{background:var(--red)}.tcard:nth-child(2) .studcap i{background:var(--yellow)}.tcard:nth-child(3) .studcap i{background:var(--blue)}
+.tcard h4{font-family:'Poppins',sans-serif;font-size:19px;font-weight:700;color:var(--w);margin-bottom:12px;line-height:1.25}
+.tcard p{font-size:14px;line-height:1.75;color:rgba(255,255,255,.62);font-weight:300}
+
+/* SUBDIVIDER */
+.subdiv{margin:52px 0 30px;display:flex;align-items:center;gap:16px}
+.subdiv-label{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--yellow);white-space:nowrap}
+.spaper2 .subdiv-label,.spaper .subdiv-label{color:var(--blue)}
+.subdiv-line{flex:1;height:2px;background:rgba(255,255,255,.12);border-radius:2px}
+.spaper2 .subdiv-line,.spaper .subdiv-line{background:var(--line)}
+
+/* PROJECT GRID (dark cards) */
+.pg{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.pi{background:var(--ink2);border-radius:12px;overflow:hidden;transition:transform .28s,box-shadow .28s;position:relative;display:flex;flex-direction:column}
+.pi::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:var(--yellow);transform:scaleX(0);transform-origin:left;transition:transform .3s;z-index:3}
+.pi:hover::before{transform:scaleX(1)}
+.pi:hover{transform:translateY(-6px);box-shadow:0 18px 40px -12px rgba(0,0,0,.5)}
+.pi.s2{grid-column:span 2}.pi.s2 .inn{display:grid;grid-template-columns:1fr 1fr}
+.pi.ghost{background:transparent;pointer-events:none}
+.it{width:100%;aspect-ratio:16/9;overflow:hidden;position:relative;background:#081a29;display:block;flex-shrink:0}
+.it img{width:100%;height:100%;object-fit:cover;display:block;opacity:.9;transition:opacity .3s,transform .4s}
+.pi:hover .it img{opacity:1;transform:scale(1.04)}
+.tov{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,19,30,.55) 0%,transparent 55%);display:flex;align-items:center;justify-content:center}
+.pb{width:54px;height:54px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all .2s;opacity:0}
+.pi:hover .pb{opacity:1;transform:scale(1.08)}
+.pb svg{width:18px;height:18px;fill:var(--ink);margin-left:3px}
+.s2 .it{aspect-ratio:unset;min-height:300px;height:100%}
+.ib{padding:32px 36px 36px;flex:1;display:flex;flex-direction:column}
+.itg{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow);background:rgba(255,207,0,.1);padding:5px 12px;border-radius:4px;margin-bottom:14px;align-self:flex-start}
+.iti{font-family:'Poppins',sans-serif;font-size:22px;font-weight:700;color:var(--w);line-height:1.2;margin-bottom:8px;letter-spacing:-.01em}
+.isu{font-size:13px;color:var(--yellow);font-weight:500;margin-bottom:12px;line-height:1.5}
+.ide{font-size:14px;line-height:1.75;color:rgba(255,255,255,.62);font-weight:300;margin-bottom:18px;flex:1}
+.ims{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:20px}
+.mn{font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;color:var(--yellow)}
+.ml{font-size:11px;color:rgba(255,255,255,.42);margin-top:2px;letter-spacing:.03em}
+.il{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--yellow);text-decoration:none;padding-bottom:2px;transition:gap .2s;align-self:flex-start}
+.il:hover{gap:13px}
+
+/* STRATEGIC WORK (light cards) */
+.sg{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.sc{background:var(--w);border:1px solid var(--line);border-radius:12px;padding:34px;transition:all .3s;position:relative;overflow:hidden}
+.sc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--red),var(--yellow),var(--blue));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.sc:hover::after{transform:scaleX(1)}
+.sc:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(5,19,30,.1)}
+.pt{width:100%;aspect-ratio:16/9;position:relative;overflow:hidden;margin-bottom:24px;cursor:pointer;display:block;border-radius:8px}
+.pt img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.pt:hover img{transform:scale(1.04)}
+.pt-over{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,19,30,.7) 0%,transparent 60%);display:flex;align-items:flex-end;padding:16px}
+.pt-cta{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--yellow)}
+.ctg{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.cti{font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:10px;letter-spacing:-.01em}
+.cde{font-size:13px;line-height:1.75;color:var(--gray);font-weight:300;margin-bottom:18px}
+.cl{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red);text-decoration:none;border:none;padding:0;padding-bottom:2px;transition:gap .2s;cursor:pointer;background:none}
+.cl:hover{gap:13px}.cls{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+
+/* MEDIA GRID (3-up) */
+.tv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mi{background:var(--ink2);border-radius:12px;overflow:hidden;transition:transform .28s,box-shadow .28s;text-decoration:none;display:block}
+.mi:hover{transform:translateY(-6px);box-shadow:0 16px 36px -12px rgba(0,0,0,.5)}
+.mt{width:100%;aspect-ratio:16/9;overflow:hidden;position:relative;background:#081a29}
+.mt img{width:100%;height:100%;object-fit:cover;display:block;opacity:.85;transition:opacity .3s}
+.mi:hover .mt img{opacity:1}
+.mpl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.mpb{width:42px;height:42px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.mpb svg{width:14px;height:14px;fill:var(--ink);margin-left:2px}
+.mb{padding:20px 24px}
+.mo{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow);margin-bottom:6px}
+.mti{font-family:'Poppins',sans-serif;font-size:17px;font-weight:700;color:var(--w);line-height:1.3;margin-bottom:4px}
+.mty{font-size:12px;color:rgba(255,255,255,.42)}
+.mar{font-size:16px;color:rgba(255,255,255,.25);margin-top:10px;display:block;transition:color .3s}
+.mi:hover .mar{color:var(--yellow)}
+
+/* CONTACT */
+.con{background:var(--ink);padding:110px 80px;text-align:center;position:relative;overflow:hidden}
+.con::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.05) 2px,transparent 2px);background-size:26px 26px}
+.coni{max-width:680px;margin:0 auto;position:relative;z-index:1}
+.con .studrow{display:flex;gap:8px;justify-content:center;margin-bottom:28px}
+.con .studrow i{width:16px;height:16px;border-radius:50%;display:block}
+.con .studrow i:nth-child(1){background:var(--red)}.con .studrow i:nth-child(2){background:var(--yellow)}.con .studrow i:nth-child(3){background:var(--blue)}
+.con h2{font-family:'Poppins',sans-serif;font-size:clamp(34px,5vw,58px);font-weight:800;color:var(--w);line-height:1.05;margin-bottom:22px;letter-spacing:-.02em}
+.con h2 em{font-style:normal;color:var(--yellow)}
+.con p{font-size:16px;line-height:1.7;color:rgba(255,255,255,.6);font-weight:300;margin-bottom:44px}
+.ctl{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* FOOTER */
+footer{background:#030c14;padding:32px 80px;display:flex;justify-content:space-between;align-items:center}
+footer p{font-size:12px;color:rgba(255,255,255,.32)}
+.fl{font-family:'Poppins',sans-serif;font-weight:800;font-size:16px;color:rgba(255,255,255,.5);display:flex;align-items:center;gap:8px}
+.fl .fstuds{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.fl .fstuds i{width:5px;height:5px;border-radius:50%;display:block}
+.fl .fstuds i:nth-child(1){background:var(--red)}.fl .fstuds i:nth-child(2){background:var(--yellow)}
+.fl .fstuds i:nth-child(3){background:var(--blue)}.fl .fstuds i:nth-child(4){background:rgba(255,255,255,.4)}
+
+/* LIGHTBOX */
+.lb{display:none;position:fixed;inset:0;background:rgba(5,19,30,.94);z-index:1000;align-items:center;justify-content:center;padding:24px}
+.lb.on{display:flex}
+.lbi{width:100%;max-width:1000px;height:85vh;position:relative;display:flex;flex-direction:column}
+.lbx{position:absolute;top:-44px;right:0;color:rgba(255,255,255,.7);font-size:28px;cursor:pointer;background:none;border:none;padding:4px 8px;transition:color .2s}
+.lbx:hover{color:var(--yellow)}
+.lbi object{width:100%;flex:1;border:none;background:#fff;display:block;border-radius:8px}
+
+/* INTRO ANIMATION */
+#intro{position:fixed;inset:0;background:var(--ink);z-index:2000;overflow:hidden}
+#intro::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.05) 2px,transparent 2px);background-size:30px 30px;pointer-events:none}
+.stage{position:absolute;inset:0}
+.blk{position:absolute;border-radius:5px;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:800;color:rgba(0,0,0,.68);box-shadow:inset 0 -8px 0 rgba(0,0,0,.15),inset 0 5px 0 rgba(255,255,255,.22);opacity:0;will-change:transform}
+.studwrap{position:absolute;left:0;right:0;display:flex;justify-content:space-evenly;padding:0 9%}
+.stud{border-radius:4px 4px 2px 2px;box-shadow:inset 0 -3px 0 rgba(0,0,0,.16),inset 0 2px 0 rgba(255,255,255,.28)}
+@keyframes drop{0%{transform:translateY(var(--startY));opacity:0}6%{opacity:1}72%{transform:translateY(0)}84%{transform:translateY(-14px)}93%{transform:translateY(0)}97%{transform:translateY(-5px)}100%{transform:translateY(0);opacity:1}}
+.blk.drop{animation:drop .8s cubic-bezier(.45,.05,.55,1) forwards}
+@keyframes burst{0%{transform:translate(0,0) rotate(0);opacity:1}100%{transform:translate(var(--bx),var(--by)) rotate(var(--br));opacity:0}}
+.blk.burst{animation:burst .7s cubic-bezier(.4,0,.7,.55) forwards}
+.finalcap{position:absolute;left:0;right:0;text-align:center;opacity:0;transition:opacity .8s ease;pointer-events:none}
+.finalcap.show{opacity:1}
+.qline{font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(20px,3vw,34px);color:rgba(255,255,255,.9)}
+.qline .hl{color:var(--yellow)}
+.skip{position:fixed;bottom:26px;right:30px;z-index:2001;background:none;border:1.5px solid rgba(255,255,255,.3);color:rgba(255,255,255,.7);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:10px 22px;border-radius:4px;cursor:pointer;transition:all .2s}
+.skip:hover{border-color:var(--yellow);color:var(--yellow)}
+body.intro-lock{overflow:hidden}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes scrollPulse{0%,100%{opacity:.35}50%{opacity:1}}
+.fi{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
+.fi.on{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.fi{opacity:1;transform:none}}
+
+/* REFINED DIRECTION — brand color and modular rhythm, without simulated bricks */
+.studs,.cluster,.studcap,.studrow,.fstuds,.brickrow{display:none!important}
+.nl{letter-spacing:-.02em}.hero::before,.con::before{background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:64px 64px}
+.hero h1{max-width:1050px}.hero h1 em{font-family:Georgia,serif;font-weight:400}.arbar{height:3px;border-radius:0}.tcard,.pi,.sc,.mi{border-radius:2px}.tcard::before{height:3px}.pt{border-radius:2px}.qline .hl{display:inline;color:var(--yellow)}
+
+/* LOGO-LED OPENING */
+#intro{display:grid;place-items:center;background:#05131e}
+#intro::before{background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:64px 64px}
+.intro-inner{position:relative;z-index:2;width:min(1000px,88vw);height:78vh;display:grid;grid-template-rows:auto 1fr auto;align-items:center;text-align:center}
+.intro-thesis{opacity:0;animation:introThesis 1s ease .45s forwards;color:white;font-family:'Poppins',sans-serif;font-size:clamp(25px,3.6vw,48px);font-weight:700;line-height:1.16;letter-spacing:-.035em;max-width:850px;margin:0 auto}
+.intro-thesis em{font-family:Georgia,serif;color:var(--yellow);font-weight:400}
+.logo-stage{position:relative;height:42vh;display:grid;place-items:center}
+.career-logo{position:absolute;max-width:min(520px,68vw);max-height:250px;width:auto;height:auto;opacity:0;filter:drop-shadow(0 20px 35px rgba(0,0,0,.28));animation:logoChapter 3.1s ease both}
+.career-logo.warped{animation-delay:1.6s;max-height:270px}.career-logo.mcr{animation-delay:4.7s;filter:invert(1) drop-shadow(0 20px 35px rgba(0,0,0,.28));max-width:min(620px,75vw)}.career-logo.wish{animation-delay:7.8s;width:min(470px,62vw);max-width:none;max-height:none;margin-top:-28px}.career-logo.uso{animation-delay:10.9s;max-width:min(430px,57vw);max-height:238px}
+.intro-close{position:absolute;left:50%;top:52%;width:96vw;transform:translate(-50%,-50%);opacity:0;animation:closeReveal 1.2s ease 14.1s forwards}.intro-close h2{font-family:'Poppins',sans-serif;color:white;font-size:clamp(14px,3.2vw,50px);font-weight:700;line-height:1.14;letter-spacing:-.04em;white-space:nowrap}.intro-close h2 em{font:inherit;color:inherit}.intro-progress{position:fixed;left:0;bottom:0;height:3px;background:var(--yellow);z-index:2002;animation:progress 17.9s linear forwards;transform-origin:left}
+@keyframes introThesis{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes logoChapter{0%{opacity:0;transform:translateY(18px) scale(.98)}15%,78%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-14px) scale(1.01)}}
+@keyframes closeReveal{to{opacity:1;transform:translate(-50%,-50%)}}
+@keyframes progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+@media(max-width:900px){
+nav{padding:0 20px}.nls{display:none}
+.hero{padding:100px 22px 60px}.hscr{left:22px}
+.sec{padding:72px 22px}
+.ab{grid-template-columns:1fr;gap:36px}
+.thesis{grid-template-columns:1fr}
+.pg{grid-template-columns:1fr}
+.pi.s2{grid-column:span 1}.pi.s2 .inn{grid-template-columns:1fr}
+.s2 .it{min-height:0;height:auto;aspect-ratio:16/9}
+.sg{grid-template-columns:1fr}.tv-grid{grid-template-columns:1fr}
+.con{padding:72px 22px}
+footer{padding:24px 22px;flex-direction:column;gap:12px;text-align:center}
+.intro-inner{height:82vh}.intro-thesis{font-size:clamp(23px,7vw,34px)}.career-logo{max-width:78vw;max-height:190px}.career-logo.mcr{max-width:84vw}.intro-close{top:50%}.intro-close h2{font-size:clamp(14px,3.2vw,34px)}
+}
+</style>
+</head>
+<body class="intro-lock">
+
+<!-- INTRO ANIMATION -->
+<div id="intro" aria-label="A career built around meaningful work">
+  <div class="intro-inner">
+    <h1 class="intro-thesis">A career built around the work<br><em>worth giving your whole self to.</em></h1>
+    <div class="logo-stage" aria-label="Vans Warped Tour, My Chemical Romance, Make-A-Wish, and USO">
+      <img class="career-logo warped" src="/lego/warped-tour.png" alt="Vans Warped Tour">
+      <img class="career-logo mcr" src="/lego/my-chemical-romance.png" alt="My Chemical Romance">
+      <img class="career-logo wish" src="/lego/make-a-wish.png" alt="Make-A-Wish">
+      <img class="career-logo uso" src="/lego/uso.png" alt="USO">
+    </div>
+    <div class="intro-close">
+      <h2>What comes next will be something I believe in.</h2>
+    </div>
+  </div>
+  <div class="intro-progress"></div>
+</div>
+<button class="skip" id="skipbtn">Skip intro &#8594;</button>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb">
+  <div class="lbi">
+    <button class="lbx" onclick="closeLB()">&#x2715;</button>
+    <object id="lbf" data="" type="application/pdf"></object>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nl">Lauren Bronson</div>
+  <ul class="nls">
+    <li><a href="#about">About</a></li>
+    <li><a href="#partnerships">Partnerships</a></li>
+    <li><a href="#build">Built From Scratch</a></li>
+    <li><a href="#media">Earned Media</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hc">
+    <div class="hl">Strategy &middot; Partnerships &middot; Storytelling &middot; Culture</div>
+    <h1>I build the reason<br><span class="r">to say</span> <span class="y">yes.</span></h1>
+    <p class="hd">Most organizations already have more value than they realize. I find where it lives, connect the right people around it, and build the idea that gives everyone a reason to say yes.</p>
+    <div class="ha">
+      <a href="#about" class="bp">See How I Think</a>
+      <a href="#partnerships" class="bs">The Work</a>
+    </div>
+  </div>
+  <div class="hscr"><div class="scrl"></div>Scroll to explore</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="sec spaper">
+  <div class="si ab">
+    <div class="fi">
+      <div class="eyebrow"><span class="cluster"><i></i><i></i><i></i><i></i></span><span>About</span></div>
+      <h2>The same instinct,<br>every chapter.</h2>
+    </div>
+    <div class="ar fi">
+      <p>I’ve never chased a title or a paycheck. I’ve chased the work that pulls me in &mdash; the kind you can’t put down, that earns your nights and weekends not because anyone asked, but because you can’t stop thinking about it. That’s the work worth doing, and finding it has shaped every chapter. It’s how I became Vans Warped Tour’s first intern after being told the tour didn’t take interns. It led me to My Chemical Romance, and eventually to two missions I believed in enough to give more than eight years to each.</p>
+      <p>The settings changed, the instinct didn’t. I see what’s possible before the pieces are in place, and I connect things most people treat as separate until the path forward looks obvious. Then I build, finding the leverage, aligning the right people, and making something that didn’t exist before. Something people actually feel.</p>
+      <p>I’m rarely building for just the immediate outcome. The best work earns the trust that makes the next thing possible. What I care about most isn’t the single win, it’s the relationship it leaves behind.</p>
+      <p>Underneath all of it, I only chase the ideas that are alive. If something doesn’t have a pulse, I can’t force one. And if the work involves a child, a service member, or a fan, it has to be true to them. Never a device, always the point. That’s the standard, because a great partnership isn’t a trade. It’s the thing neither side could have made alone, and everyone walks away wanting to build it again.</p>
+      <div class="arbar"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERSHIPS -->
+<section id="partnerships" class="sec spaper2">
+  <div class="si">
+    <div class="shd fi">
+      <div class="eyebrow"><span class="cluster"><i></i><i></i><i></i><i></i></span><span>Talent &amp; Brand Partnerships</span></div>
+      <h2 class="st">The work, and why it compounded.</h2>
+      <p class="ss" style="max-width:1120px;">I knew the USO could offer partners more than military access. It gave them a credible way to tell an American story about service, gratitude, and the values that still connect us. I built a partner-funded model around that value.</p>
+    </div>
+
+    <div class="subdiv fi"><div class="subdiv-label">Studio and Talent Partnerships</div><div class="subdiv-line"></div></div>
+    <div class="pg">
+      <div class="pi s2 fi">
+        <div class="inn">
+          <a href="https://www.youtube.com/watch?v=ymzLYEFU6wo" target="_blank" class="it">
+            <img src="https://img.youtube.com/vi/ymzLYEFU6wo/maxresdefault.jpg" alt="Channing Tatum / DOG">
+            <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          </a>
+          <div class="ib">
+            <div class="itg">MGM Studios | Talent Partnership</div>
+            <h3 class="iti">Channing Tatum | DOG</h3>
+            <div class="isu">The campaign that established the model.</div>
+            <p class="ide">MGM brought the IP and talent, and funded the travel, production, and content capture. I designed two base visits, a virtual engagement reaching troops overseas, and a talent-signed donor campaign, each for a different audience. The campaign proved that authentic service-member experiences could serve the mission while giving the studio a credible story to carry far beyond the moment. Every studio partnership that followed was built on what this one proved.</p>
+            <a href="https://www.youtube.com/watch?v=ymzLYEFU6wo" target="_blank" class="il">WATCH THE VIDEO &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pi fi">
+        <a href="https://www.instagram.com/p/CmZ1yNiJ9mg/" target="_blank" class="it">
+          <img src="/lego/john.jpg" alt="John Krasinski / Jack Ryan">
+          <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        </a>
+        <div class="ib">
+          <div class="itg">Prime Video | Talent Partnership</div>
+          <h3 class="iti">John Krasinski | JACK RYAN</h3>
+          <div class="isu">When he shows up, trust travels with him.</div>
+          <p class="ide">Co-branded across talent and Prime Video channels during peak holiday season, the reach was significant. The trust it transferred was more so. His audience did not just see the USO. They saw someone they trusted choosing it.</p>
+          <a href="https://www.instagram.com/p/CmZ1yNiJ9mg/" target="_blank" class="il">VIEW ON INSTAGRAM &#8594;</a>
+        </div>
+      </div>
+
+      <div class="pi fi">
+        <a href="https://youtu.be/onSvz8VpzrY" target="_blank" class="it">
+          <img src="/lego/jake.jpeg" alt="Jake Gyllenhaal / The Covenant">
+          <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        </a>
+        <div class="ib">
+          <div class="itg">MGM Studios | Returning Partner</div>
+          <h3 class="iti">Jake Gyllenhaal | THE COVENANT</h3>
+          <div class="isu">They came back. That was the verdict.</div>
+          <p class="ide">MGM returned for a second partnership, not because they had to, but because the first one delivered for everyone at the table. In this work, that’s the only verdict that counts.</p>
+          <a href="https://youtu.be/onSvz8VpzrY" target="_blank" class="il">WATCH THE VIDEO &#8594;</a>
+        </div>
+      </div>
+
+      <div class="pi fi">
+        <a href="https://www.youtube.com/shorts/JsVDMG4hESo" target="_blank" class="it">
+          <img src="/lego/Bikeriders.png" alt="The Bikeriders">
+          <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        </a>
+        <div class="ib">
+          <div class="itg">Focus Features | Ensemble Partnership</div>
+          <h3 class="iti">Austin Butler, Jodie Comer &amp; Norman Reedus | THE BIKERIDERS</h3>
+          <div class="isu">A-list ensemble, fully partner-funded.</div>
+          <p class="ide">Three names, one activation. The military motorcycle community that lived the film&#8217;s subject became part of the experience, not just its audience. It felt authentic because it was built with the community, not merely for it.</p>
+          <a href="https://www.youtube.com/shorts/JsVDMG4hESo" target="_blank" class="il">WATCH THE VIDEO &#8594;</a>
+        </div>
+      </div>
+
+      <div class="pi fi">
+        <a href="https://www.instagram.com/p/DOL0C-GEdWt/" target="_blank" class="it">
+          <img src="/lego/wolf.png" alt="Taylor Kitsch / Dark Wolf">
+          <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        </a>
+        <div class="ib">
+          <div class="itg">Prime Video | Third Collaboration</div>
+          <h3 class="iti">Taylor Kitsch | THE TERMINAL LIST, DARK WOLF</h3>
+          <div class="isu">Not a streak. A standing partnership.</div>
+          <p class="ide">Three integrations across three Prime Video titles. What began as one engagement became a program, with each project building on the access and trust established before it.</p>
+          <a href="https://www.instagram.com/p/DOL0C-GEdWt/" target="_blank" class="il">VIEW ON INSTAGRAM &#8594;</a>
+        </div>
+      </div>
+      <div class="pi ghost"></div>
+    </div>
+
+    <div class="subdiv fi"><div class="subdiv-label">Unexpected Ways In</div><div class="subdiv-line"></div></div>
+    <div class="pg">
+      <div class="pi s2 fi">
+        <div class="inn">
+          <div class="ib">
+            <div class="itg">USO Virtual Tour | Talent Engagement</div>
+            <h3 class="iti">Snoop Dogg | USO Virtual Tour</h3>
+            <div class="isu">Thirty minutes was enough.</div>
+            <p class="ide">Snoop couldn’t give us a week overseas. He could give us thirty minutes. I built around that yes, bringing him directly to deployed service members for an honest conversation about staying connected to home. On our next call, his representative told me it was one of the best things he had done during a launch. The experience stayed with Snoop and his team, and built the trust that opened the door to whatever we imagined next.</p>
+            <a href="https://youtu.be/hzhORnOuujM" target="_blank" class="il">WATCH THE VIDEO &#8594;</a>
+          </div>
+          <a href="https://youtu.be/hzhORnOuujM" target="_blank" class="it" style="min-height:300px;height:100%;">
+            <img src="/lego/snoop.png" alt="Snoop Dogg USO Virtual Tour">
+            <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="pi s2 fi">
+        <div class="inn">
+          <a href="https://www.instagram.com/p/DGluuxPPHWT/?hl=en" target="_blank" class="it" style="min-height:300px;height:100%;">
+            <img src="/lego/dave.png" alt="Dave Portnoy / Miss Peaches">
+            <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          </a>
+          <div class="ib">
+            <div class="itg">Audience Strategy | Canine Campaign</div>
+            <h3 class="iti">Dave Portnoy &amp; Miss Peaches | Canine Volunteer of the Year</h3>
+            <div class="isu">The right invitation made the first yes easy.</div>
+            <p class="ide">I wanted to reach Dave Portnoy’s audience, but the most credible invitation was Miss Peaches. Her following and natural connection to the USO’s canine campaign made the idea feel true. The video created an authentic first step toward that audience and a meaningful first experience for Dave, opening the door to more. It did not need to be a major campaign. It needed to be the right beginning.</p>
+            <a href="https://www.instagram.com/p/DGluuxPPHWT/?hl=en" target="_blank" class="il">VIEW ON INSTAGRAM &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUILT FROM SCRATCH -->
+<section id="build" class="sec spaper">
+  <div class="si">
+    <div class="shd fi">
+      <div class="eyebrow"><span class="cluster"><i></i><i></i><i></i><i></i></span><span>Built From Scratch</span></div>
+      <h2 class="st">Beyond the assignment.</h2>
+      <p class="ss" style="max-width:900px;">Two ideas I could not leave alone. One solved a partnership problem. The other reimagined the organization itself.</p>
+    </div>
+    <div class="sg">
+      <div class="sc fi" style="order:2;">
+        <div class="pt" onclick="openLB('/lego/deck.pdf')">
+          <img src="/lego/deckimage.png" alt="USO Strategic Framework">
+          <div class="pt-over"><div class="pt-cta">Click to view &#8594;</div></div>
+        </div>
+        <div class="ctg">Organizational Strategy | Executive Brief</div>
+        <h3 class="cti">USO Strategic Framework &amp; Executive One-Sheet</h3>
+        <p class="cde">I saw a larger future for an organization I believed in, so I put it on paper. I developed a 14-page enterprise strategy for positioning the USO as America&#8217;s nonprofit, then distilled it into a one-page executive brief. The framework made visibility, storytelling, and cultural engagement part of mission delivery. It sequenced awareness before affinity and giving, and reimagined entertainment, sports, and transitions around scale, trust, and distinctive value. I sent both to the incoming CEO because loyalty to an organization includes offering your clearest thinking, even when no one has asked for it.</p>
+        <div class="cls">
+          <button class="cl" onclick="openLB('/lego/deck.pdf')">View the Framework &#8594;</button>
+          <button class="cl" onclick="openLB('/lego/one-sheet.pdf')">View the One-Sheet &#8594;</button>
+        </div>
+      </div>
+      <div class="sc fi" style="order:1;">
+        <div class="pt" onclick="openLB('/lego/dunkin.pdf')">
+          <img src="/lego/cup.png" alt="PRESSURE x Dunkin x USO">
+          <div class="pt-over"><div class="pt-cta">Click to view &#8594;</div></div>
+        </div>
+        <div class="ctg">Partnership Concept | Strategic Pivot</div>
+        <h3 class="cti">PRESSURE &#215; Dunkin&#8217; &#215; USO</h3>
+        <p class="cde">A three-way brand integration anchored to Memorial Day and the film’s D-Day narrative. The 72&#162; donation mirrored the film’s 72-hour theme, spanning a limited-edition Dunkin’ cup, talent appearances, and service-member screenings. The exchange gave the studio a cultural story when traditional media was unavailable, Dunkin’ an authentic role in a patriotic moment, the USO awareness and a fundraising path, and Americans an easy way to support those who serve.</p>
+        <p class="cde">When world events made talent-led military promotion impossible, I moved the story to an overlooked collection of World War II letters. I brought in Legacybox to digitize them at no cost, then built a public archive around their human story of D-Day and a studio-funded mission immersion at Fort Campbell for 14 media and creators.</p>
+        <div class="cls">
+          <button class="cl" onclick="openLB('/lego/dunkin.pdf')">View the Dunkin’ Pitch &#8594;</button>
+          <button class="cl" onclick="openLB('/lego/letters.pdf')">View the Letters Home Proposal &#8594;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EARNED MEDIA -->
+<section id="media" class="sec sink">
+  <div class="si">
+    <div class="shd fi">
+      <div class="eyebrow"><span class="cluster"><i></i><i></i><i></i><i></i></span><span>Earned Media</span></div>
+      <h2 class="st">Stories built to travel.</h2>
+      <p class="ss">An authentic experience gives a story somewhere to begin. The ones that travel are the ones that land, and remind us what we share.</p>
+    </div>
+
+    <div class="subdiv fi"><div class="subdiv-label">USO</div><div class="subdiv-line"></div></div>
+    <div class="pg" style="margin-bottom:2px;">
+      <div class="pi s2 fi">
+        <div class="inn">
+          <a href="https://www.facebook.com/theUSO/posts/sailors-at-naval-station-norfolk-got-a-visit-from-the-great-food-truck-race-fina/1252801533551913/" target="_blank" class="it">
+            <img src="/lego/tgftr.jpeg" alt="The Great Food Truck Race">
+            <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          </a>
+          <div class="ib">
+            <div class="itg">Food Network | Series Finale</div>
+            <h3 class="iti">The Great Food Truck Race | Finale Feature</h3>
+            <div class="isu">A relationship I refused to treat as one-time.</div>
+            <p class="ide">After one event with Tyler Florence, I saw both his genuine connection to the military, and the larger untapped opportunity &mdash; The Great Food Truck Race. When my team declined another engagement, I found a cost-neutral path through the marketing team, and joined him at Fleet Week. I raised the show early, then let the experience do the rest. By dinner, Tyler was asking what we could do next, and suggested the series himself. I secured the producer introduction, wrote the creative brief, and pitched the concept. They made it the season finale. The placement helped the USO recognize the full value of the relationship, and Tyler later became a Global Ambassador.</p>
+            <div class="ims">
+              <div><div class="mn">Finale</div><div class="ml">Food Network placement</div></div>
+              <div><div class="mn">Ambassador</div><div class="ml">Tyler Florence, ongoing</div></div>
+            </div>
+            <a href="https://www.facebook.com/theUSO/posts/sailors-at-naval-station-norfolk-got-a-visit-from-the-great-food-truck-race-fina/1252801533551913/" target="_blank" class="il">WATCH THE VIDEO &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subdiv fi"><div class="subdiv-label">Make-A-Wish America</div><div class="subdiv-line"></div></div>
+    <p class="ss fi" style="margin-bottom:36px;max-width:100%;">At Make-A-Wish, there was no room for error. A wish happens once. I designed each around the child while protecting everyone the moment touched &mdash; the family, the talent, the organization &mdash; so the joy landed and nothing was left to chance. When a wish also held a story worth telling, sharing it could extend the gift to millions.</p>
+
+    <div class="pg" style="margin-bottom:2px;">
+      <div class="pi s2 fi">
+        <div class="inn" style="grid-template-columns:1fr 1fr;">
+          <div class="ib" style="justify-content:center;">
+            <div class="itg">Today Show | NBC National Television</div>
+            <h3 class="iti">Make-A-Wish Kids at the GRAMMY Awards</h3>
+            <div class="isu">The GRAMMYs supplied the stage. The children were the story.</div>
+            <p class="ide">Seven wish kids came to music&#8217;s biggest night to see the stars. For Today, they were the stars. The coverage did more than document the wish. It became part of it, letting millions share in their joy without taking the spotlight from them.</p>
+            <div class="ims">
+              <div><div class="mn">NBC</div><div class="ml">National broadcast</div></div>
+              <div><div class="mn">7</div><div class="ml">Wish kids featured</div></div>
+            </div>
+            <a href="https://www.today.com/video/make-a-wish-foundation-makes-7-kids-dreams-come-true-at-grammys-1148418627524" target="_blank" class="il">WATCH THE VIDEO &#8594;</a>
+          </div>
+          <a href="https://www.today.com/video/make-a-wish-foundation-makes-7-kids-dreams-come-true-at-grammys-1148418627524" target="_blank" class="it">
+            <img src="/lego/grammys.png" alt="Make-A-Wish Kids at the GRAMMYs">
+            <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pg" style="margin-top:20px;">
+      <div class="pi s2 fi">
+        <div class="inn">
+          <a href="https://www.youtube.com/watch?v=Oq2_h6KU4aw" target="_blank" class="it" style="min-height:300px;height:100%;">
+            <img src="/lego/cayden.png" alt="Cayden's Wish">
+            <div class="tov"><div class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          </a>
+          <div class="ib">
+            <div class="itg">Extra | Mario Lopez at The Grove</div>
+            <h3 class="iti">Cayden's Wish | Becoming a Pop Star</h3>
+            <div class="isu">He asked to be a pop star. I designed the wish to make him feel like one.</div>
+            <p class="ide">I designed a pop-star day around Cayden, from a cheering welcome and recording session at Red Bull Studios to a Macy&#8217;s wardrobe, Maroon 5, and a live interview with Mario Lopez. The wish did not simply place him near celebrity. Every partner helped make Cayden the star.</p>
+            <div class="ims">
+              <div><div class="mn">Extra</div><div class="ml">National entertainment news</div></div>
+              <div><div class="mn">Maroon 5</div><div class="ml">+ Red Bull + Macy's</div></div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=Oq2_h6KU4aw" target="_blank" class="il">WATCH THE VIDEO &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subdiv fi"><div class="subdiv-label">Teen Vogue &#215; Featured Talent Stories</div><div class="subdiv-line"></div></div>
+    <div class="tv-grid fi">
+      <a href="https://www.youtube.com/watch?v=5jT8Qef5Hf8" target="_blank" class="mi">
+        <div class="mt"><img src="https://img.youtube.com/vi/5jT8Qef5Hf8/maxresdefault.jpg" alt="Katy Perry"><div class="mpl"><div class="mpb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div></div>
+        <div class="mb"><div class="mo">YouTube Feature</div><div class="mti">Katy Perry</div><div class="mty">Teen Vogue &#215; Make-A-Wish</div><span class="mar">&#8594;</span></div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=QS4TyYWfui8" target="_blank" class="mi">
+        <div class="mt"><img src="https://img.youtube.com/vi/QS4TyYWfui8/maxresdefault.jpg" alt="Justin Bieber"><div class="mpl"><div class="mpb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div></div>
+        <div class="mb"><div class="mo">YouTube Feature</div><div class="mti">Justin Bieber</div><div class="mty">Teen Vogue &#215; Make-A-Wish</div><span class="mar">&#8594;</span></div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=1-g-hunkA3E" target="_blank" class="mi">
+        <div class="mt"><img src="https://img.youtube.com/vi/1-g-hunkA3E/maxresdefault.jpg" alt="Meghan Trainor"><div class="mpl"><div class="mpb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div></div>
+        <div class="mb"><div class="mo">YouTube Feature</div><div class="mti">Meghan Trainor</div><div class="mty">Teen Vogue &#215; Make-A-Wish</div><span class="mar">&#8594;</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="con" id="contact">
+  <div class="coni fi">
+    <div class="studrow"><i></i><i></i><i></i></div>
+    <h2>Let's build something<br><em>worth remembering.</em></h2>
+    <p>I've had four dream jobs. I know the feeling when a fifth comes along. If you're open to a conversation, I'd love to talk.</p>
+    <div class="ctl">
+      <a href="mailto:laurenbronson@gmail.com" class="bp">laurenbronson@gmail.com</a>
+      <a href="https://www.linkedin.com/in/laurenbronson" target="_blank" class="bs">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fl"><span class="fstuds"><i></i><i></i><i></i><i></i></span>Lauren Bronson</div>
+  <p>Built for LEGO &middot; thisisbronson.com/lego</p>
+</footer>
+
+<script>
+/* INTRO ANIMATION */
+(function(){
+  const intro=document.getElementById('intro');
+  const stage=document.getElementById('stage');
+  const finalcap=document.getElementById('finalcap');
+  const skipbtn=document.getElementById('skipbtn');
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const PALETTE=['#E3000B','#FFCF00','#0057A8','#009A44','#FF7A00'];
+  const STOPS=[
+    {rows:[['V','A','N','S'],['W','A','R','P','E','D'],['T','O','U','R']]},
+    {rows:[['M','Y'],['C','H','E','M','I','C','A','L'],['R','O','M','A','N','C','E']]},
+    {rows:[['M','A','K','E','-','A'],['W','I','S','H']]},
+    {rows:[['U','S','O']]},
+    {rows:[['L','E','G','O']],final:true}
+  ];
+  let ci=0,done=false,timers=[];
+  function t(fn,ms){const id=setTimeout(fn,ms);timers.push(id);return id;}
+  function studCount(wRatio){return wRatio<0.8?2:Math.max(2,Math.round(wRatio*3));}
+  function playStop(){
+    if(done||ci>=STOPS.length)return;
+    const stop=STOPS[ci];const rows=stop.rows;
+    const longest=Math.max(...rows.map(r=>r.length));
+    const nrows=rows.length;
+    const vw=window.innerWidth, vh=window.innerHeight;
+    const gap=vw*0.012, rowGap=vh*0.03;
+    const bwByW=(vw*0.58-(longest-1)*gap)/longest;
+    const bhByH=(vh*0.54-(nrows-1)*rowGap)/nrows;
+    const bw=Math.min(bwByW, bhByH/1.18);
+    const bh=bw*1.18;
+    const studOverhang=bh*0.16;
+    const totalH=nrows*bh+(nrows-1)*rowGap;
+    const startTop=(vh-totalH)/2;
+    const bricks=[];
+    rows.forEach((row,ri)=>{
+      const rowW=row.reduce((a,ch)=>a+((ch==='-')?bw*0.55:bw),0)+(row.length-1)*gap;
+      let x=(vw-rowW)/2;
+      const y=startTop+ri*(bh+rowGap);
+      row.forEach((ch,i)=>{
+        const isDash=(ch==='-');const w=isDash?bw*0.55:bw;
+        const b=document.createElement('div');b.className='blk';
+        const col=PALETTE[(ri+i)%5];b.style.background=col;
+        b.style.width=w+'px';b.style.height=bh+'px';b.style.left=x+'px';b.style.top=y+'px';
+        b.style.fontSize=(bh*0.54)+'px';b.textContent=isDash?'':ch;
+        b.style.setProperty('--startY',(-(y+bh)-vh*0.15)+'px');
+        b.style.setProperty('--bx',((Math.random()*700)-350)+'px');
+        b.style.setProperty('--by',((Math.random()*-450)-120)+'px');
+        b.style.setProperty('--br',((Math.random()*240)-120)+'deg');
+        const sw=document.createElement('div');sw.className='studwrap';
+        sw.style.top=(-studOverhang)+'px';sw.style.height=(studOverhang+2)+'px';
+        const n=studCount(w/bw);
+        for(let k=0;k<n;k++){const s=document.createElement('div');s.className='stud';s.style.background=col;s.style.width=(bh*0.24)+'px';s.style.height=studOverhang+'px';sw.appendChild(s);}
+        b.appendChild(sw);stage.appendChild(b);bricks.push(b);x+=w+gap;
+      });
+    });
+    const STEP=210;
+    bricks.forEach((b,i)=>{t(()=>b.classList.add('drop'),i*STEP);});
+    const buildTime=bricks.length*STEP+800;
+    if(stop.final){
+      t(()=>finalcap.classList.add('show'),buildTime+300);
+      t(finish,buildTime+3200);
+      return;
+    }
+    t(()=>{bricks.forEach(b=>{b.classList.remove('drop');b.classList.add('burst');});t(()=>{bricks.forEach(b=>b.remove());ci++;playStop();},700);},buildTime+1000);
+  }
+  function finish(){
+    if(done)return;done=true;timers.forEach(clearTimeout);
+    intro.style.transition='opacity .7s ease,transform .7s ease';
+    intro.style.opacity='0';intro.style.transform='translateY(-30px)';
+    skipbtn.style.transition='opacity .3s ease';skipbtn.style.opacity='0';
+    setTimeout(()=>{intro.style.display='none';skipbtn.style.display='none';document.body.classList.remove('intro-lock');},700);
+  }
+  skipbtn.addEventListener('click',finish);
+  if(reduce){finish();}else{t(finish,17900);}
+})();
+
+function openLB(f){document.getElementById('lbf').data=f;document.getElementById('lb').classList.add('on');document.body.style.overflow='hidden'}
+function closeLB(){document.getElementById('lb').classList.remove('on');document.getElementById('lbf').data='';document.body.style.overflow=''}
+document.getElementById('lb').addEventListener('click',function(e){if(e.target===this)closeLB()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB()});
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')})},{threshold:.08});
+document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
+const secs=document.querySelectorAll('section[id]');
+const nls=document.querySelectorAll('.nls a');
+window.addEventListener('scroll',()=>{let c='';secs.forEach(s=>{if(window.scrollY>=s.offsetTop-100)c=s.getAttribute('id')});nls.forEach(l=>{l.style.color=l.getAttribute('href')==='#'+c?'var(--yellow)':'rgba(255,255,255,.72)'})});
+</script>
+</body>
+</html>
